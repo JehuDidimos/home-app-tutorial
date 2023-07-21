@@ -3,6 +3,9 @@
     column-gap: 14px;
     row-gap: 14px;
     grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 input[type="text"]{
