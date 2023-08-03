@@ -28,6 +28,8 @@ export class HomeComponent {
   housingService: HousingService = new HousingService;
 
   constructor(){
-    this.housingLocationList = this.housingService.getAllHousing();
+    this.housingService.getAllHousing().then((housingLocationList: HousingLocation[]) =>{
+      this.housingLocationList = housingLocationList;
+    });
   }
 }
